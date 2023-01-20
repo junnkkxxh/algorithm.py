@@ -2,7 +2,6 @@
 
 from collections import deque
 
-
 def solution(cacheSize, cities):
     answer = 0
 
@@ -23,9 +22,12 @@ def solution(cacheSize, cities):
     return answer
 
 
-# 참고
-# deque의 maxlen
 
+
+
+
+# 참고
+## deque의 maxlen
 
 # def solution(cacheSize, cities):
 #     import collections
