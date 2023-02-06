@@ -1,0 +1,12 @@
+-- SELECT
+-- 과일로 만든 아이스크림 고르기
+SELECT
+    fa.FLAVOR
+FROM
+    FIRST_HALF fa
+    LEFT JOIN ICECREAM_INFO ii ON fa.FLAVOR = ii.FLAVOR
+WHERE
+    fa.TOTAL_ORDER > 3000
+    AND ii.INGREDIENT_TYPE = "fruit_based"
+ORDER BY
+    fa.TOTAL_ORDER DESC;
