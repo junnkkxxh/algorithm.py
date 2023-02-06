@@ -129,3 +129,32 @@ SQL
 	    FROM ANIMAL_INS;
 
 * DATE_FORMAT(DATETIME, '%Y-%m-%d')
+
+
+* 숫자
+    * CEIL -> 올림 
+        CEIL(0.12) — 1
+        
+    * ROUND -> 반올림 
+        ROUND(0.512) — 1
+        ROUND(0.512, 2) — 0.57 (반올림 자릿수 설정)
+
+    * FLOOR , TRUNCATE -> 버림 
+        FLOOR(0.911) — 0
+        TRUNCATE(0.21, 1) — 0.2
+
+    * ABS -> 절댓값
+        ABS(100) — 100
+        ABS(-100) — 100
+
+    * POW -> 제곱
+        POW(10,2) — 100
+
+    * MOD -> 나머지 
+        MOD(10,3) — 1
+
+    * GREATEST -> 최댓값
+        GREATEST(10, 4, 20, 1) — 20
+
+    * LEAST -> 최솟값
+        LEAST(10, 4, 20, 1) — 1
