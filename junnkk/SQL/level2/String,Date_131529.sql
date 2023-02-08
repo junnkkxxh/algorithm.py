@@ -1,0 +1,9 @@
+-- String, Date
+-- 카테고리 별 상품 개수 구하기
+SELECT
+    SUBSTRING(PRODUCT_CODE, 1, 2) AS CATEGORY,
+    COUNT(*) AS PRODUCTS
+FROM
+    PRODUCT
+GROUP BY
+    CATEGORY;
