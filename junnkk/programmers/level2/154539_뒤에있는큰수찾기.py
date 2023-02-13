@@ -14,3 +14,39 @@ def solution(numbers):
                 answer.append(-1)
                               
     return answer
+
+
+
+# # stack
+# def solution(numbers):
+#     stack = []
+#     answer = [0] * len(numbers)
+
+#     for i in range(len(numbers)):
+#             while stack and numbers[stack[-1]] < numbers[i]:
+#                 answer[stack.pop()] = numbers[i]
+#             stack.append(i)
+#     while stack:
+#             answer[stack.pop()] = -1
+    
+#     return answer
+
+
+# 우선순위 큐
+import heapq
+
+def solution(numbers):
+    answer = [-1] * len(numbers) 
+    h = []
+    
+    for i, n in enumerate(numbers):
+        while h and h[0][0]< n:
+            _, idx = heapq.heappop(h)
+            answer[idx] = n
+        heapq.heappush(h,(n,i))
+        
+        
+        
+            
+                              
+    return answer
